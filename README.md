@@ -1,4 +1,4 @@
-<img width="861" height="345" alt="image" src="https://github.com/user-attachments/assets/7913c1aa-6016-4312-af7b-91b85705f24b" /># 작업 일지
+# 작업 일지
 <26/02/14>
 맵 완성
 
