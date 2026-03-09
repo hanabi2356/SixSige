@@ -15,7 +15,9 @@
   - Lean Blend Space 1D에 적용안한 IDLE 적용
   - Sprint 키 입력 추가
 
-# 원작 게임(Rainbow Six Sige)기능 설명
+# 원작 게임(Rainbow Six Sige)기능 노트
+  - Sprint W + Shift를 같이 눌렀을 때만 작동
+
 # 당장 할 일
 Sprint 기능 구현
 
