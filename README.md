@@ -12,9 +12,12 @@
 
 <26/03/09>
   - Lean 애니메이션에 보간 적용
-  - Lean Blend Space 1D에 적용안한 IDLE 적용    
-# 당장 할 일
+  - Lean Blend Space 1D에 적용안한 IDLE 적용
+  - Sprint 키 입력 추가
 
+# 원작 게임(Rainbow Six Sige)기능 설명
+# 당장 할 일
+Sprint 기능 구현
 
 # 나중에 할 일
 방향 전환시 애니메이션 튀는 현상 수정
