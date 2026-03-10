@@ -15,15 +15,18 @@
   - Lean Blend Space 1D에 적용안한 IDLE 적용
   - Sprint 키 입력 추가
 
+<26/03/10>
+  - Sprint 기능 구현
+      
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
 
 # 당장 할 일
-Sprint 기능 구현
+Sprint Animation 적용
 
 # 나중에 할 일
 방향 전환시 애니메이션 튀는 현상 수정
-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)
+~~IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
 # 버그 리포트
 
