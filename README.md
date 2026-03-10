@@ -22,14 +22,14 @@
   - Sprint W + Shift를 같이 눌렀을 때만 작동
 
 # 당장 할 일
-Sprint Animation 적용
+  - Sprint Animation 적용
 
 # 나중에 할 일
 방향 전환시 애니메이션 튀는 현상 수정
 ~~IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
 # 버그 리포트
-
+  - W 이외에 버튼과 shift를 눌러도 sprint가 되는 현상
 # 핵심 기능
 
 # 오브젝트 기능
