@@ -33,10 +33,10 @@
     
 # 당장 할 일
   ~~- 크로스헤어 시스템 제작~~
-  - sprint 애니메이션 적용
+  ~~- sprint 애니메이션 적용~~
   - 조준 시스템 적용
   ~~- Crunch / Prone 모션 적용~~
-
+  - Stance에 따른 CapsuleComponent Height 조절
 # 나중에 할 일
   - 방향 전환시 애니메이션 튀는 현상 수정
   - Prone 애니메이션 구하기(Maximo에 없음)
@@ -49,4 +49,6 @@
 # 오브젝트 및 함수 기능
   - MovementVelocity : 현재 Stance별로 Max Walk Speed를 조절한다
   - IsCrunch?/IsProne?/IsCrunch?(순수 함수) : 현재 상태를 받아서 true/false를 반환한다
+  - UpdateCrosshair : 플레이어의 Velocity를 기반으로 Crosshair가 벌어지는 거리를 계산한다
+  - UpdateLeaning : 플레이어의 특정 Lean 각도 까지 FInterp To를 이용해 보간하여 각도를 업데이트 한다(Tick의 DeltaTime 기반으로 계산)
   
