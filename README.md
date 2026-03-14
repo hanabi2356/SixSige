@@ -35,9 +35,10 @@
 # 당장 할 일
   ~~- 크로스헤어 시스템 제작~~
   ~~- sprint 애니메이션 적용~~
-  - 조준 시스템 적용
   ~~- Crunch / Prone 모션 적용~~
+  - 조준 시스템 적용
   - Stance에 따른 CapsuleComponent Height 조절
+    
 # 나중에 할 일
   - 방향 전환시 애니메이션 튀는 현상 수정
   - Prone 애니메이션 구하기(Maximo에 없음)
