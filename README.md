@@ -36,16 +36,20 @@
   ~~- 크로스헤어 시스템 제작~~
   ~~- sprint 애니메이션 적용~~
   ~~- Crunch / Prone 모션 적용~~
+  
   - 조준 시스템 적용
   - Stance에 따른 CapsuleComponent Height 조절
     
 # 나중에 할 일
+~~-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
+
   - 방향 전환시 애니메이션 튀는 현상 수정
   - Prone 애니메이션 구하기(Maximo에 없음)
-~~IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
+    
 
 # 버그 리포트
   ~~- W 이외에 버튼과 shift를 눌러도 sprint가 되는 현상~~
+  
   - Crunch/Prone 자세에서 Sprint가 되는 현상(Sprint시 Stand 상태로 변환)
 
 # 오브젝트 및 함수 기능
