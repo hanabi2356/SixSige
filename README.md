@@ -17,19 +17,31 @@
 
 <26/03/10>
   - Sprint 기능 구현
-      
+
+<26/03/14>
+  - 
+  - 
+  
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
-
+  - c 입력 시 Crunch / crtl 입력 시 Prone
+  - v 입력 시 근접 공격
+  - f 입력 시 벽 강화 및 바리케이드 설치 
+  - z 입력 시 LineTrace를 기준으로 핑을 찍어준다
+    
 # 당장 할 일
-  - Sprint Animation 적용
+  - 크로스헤어 시스템 제작
+  - sprint 애니메이션 적용
+  - 조준 시스템 적용
+  - Crunch / Prone 모션 적용
 
 # 나중에 할 일
 방향 전환시 애니메이션 튀는 현상 수정
 ~~IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
 # 버그 리포트
-  - W 이외에 버튼과 shift를 눌러도 sprint가 되는 현상
+  ~~- W 이외에 버튼과 shift를 눌러도 sprint가 되는 현상~~
 # 핵심 기능
 
-# 오브젝트 기능
+# 오브젝트 및 함수 기능
+  - MovementVelocity : 현재 자세별로 언리얼의 Max Walk Speed를 조절한다
