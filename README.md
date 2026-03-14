@@ -17,10 +17,10 @@
 
 <26/03/10>
   - Sprint 기능 구현
-
+    
 <26/03/14>
-  - 
-  - 
+  - Crunch 애니메이션 적용
+  - Prone 구현 완료(애니메이션이 없음 이슈)
   
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
@@ -36,7 +36,8 @@
   - Crunch / Prone 모션 적용
 
 # 나중에 할 일
-방향 전환시 애니메이션 튀는 현상 수정
+  - 방향 전환시 애니메이션 튀는 현상 수정
+  - Prone 애니메이션 구하기(Maximo에 없음)
 ~~IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
 # 버그 리포트
@@ -45,3 +46,5 @@
 
 # 오브젝트 및 함수 기능
   - MovementVelocity : 현재 자세별로 언리얼의 Max Walk Speed를 조절한다
+  - IsCrunch?/IsProne?/IsCrunch?(순수 함수) : 현재 상태를 받아서 true/false를 반환한다
+  
