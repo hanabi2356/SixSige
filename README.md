@@ -23,6 +23,7 @@
   - Prone 구현 완료(애니메이션이 없음 이슈)
   - Stance에 따른 Max Walk Speed 변경하는 기능 완료
   - Crosshair 제작 완료
+  - 가시성을 위한 몇몇 로직 함수화
   
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
