@@ -39,14 +39,13 @@
 
     
 # 당장 할 일  
-  - 조준 시스템 적용(PiP 적용)
     
 # 나중에 할 일
 ~~-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
   - 방향 전환시 애니메이션 튀는 현상 수정
   - Prone 애니메이션 구하기(Maximo에 없음)
-  - ADS 시스템 구현    
+  - ADS 시스템 구현(만약 Lens 머테리얼이 있는 에셋이 있을 경우에는 PiP 기법으로 구현하고 없으면 레일에 아무것도 없는 에셋을 사용하여 아이언 사이트로 만들 예정)
 
 # 버그 리포트
 <해결된 버그>
@@ -65,4 +64,5 @@
   - UpdateCrosshair : 플레이어의 Velocity를 기반으로 Crosshair가 벌어지는 거리를 계산한다
   - UpdateLeaning : 플레이어의 특정 Lean 각도 까지 FInterp To를 이용해 보간하여 각도를 업데이트 한다(Tick의 DeltaTime 기반으로 계산)
   - UpdateCapsuleHeight : Stance별로 Mesh의 Z오프셋을 -CapsuleHalfHeight 만틈 주어 동기화 시킨 후 CapsuleHalfHeight를 TargetHalfHeight만큼 변경한다
+  - UpdateFOV : 오른쪽 마우스 클릭에 따른 FOV값 변경
   
