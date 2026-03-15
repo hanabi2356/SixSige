@@ -24,6 +24,10 @@
   - Stance에 따른 Max Walk Speed 변경하는 기능 완료
   - Crosshair 제작 완료
   - 가시성을 위한 몇몇 로직 함수화
+
+<26/03/15>
+  - 플레이어 Stance 별 CapsuleComponentHalfSize 적용
+  - 
   
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
@@ -48,8 +52,12 @@
     
 
 # 버그 리포트
-  ~~- W 이외에 버튼과 shift를 눌러도 sprint가 되는 현상~~
-  
+<해결된 버그>
+  - W 이외에 버튼과 shift를 눌러도 sprint가 되는 현상
+  - Stance 변경 시 CapsuleComponent의 CapsuleHalfSize도 변경하는데 변경 시 캐릭테 외형이 눌리는 현상 발생
+    - 해결 방법 : CapsuleHalfSize를 바꿀때 Mesh의 Relative Location을 -CapsuleHalfSize 만큼 바꿔 위치를 동기화 한다
+
+<해결되지 않은 버그>
   - Crunch/Prone 자세에서 Sprint가 되는 현상(Sprint시 Stand 상태로 변환)
 
 # 오브젝트 및 함수 기능
