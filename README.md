@@ -42,7 +42,7 @@
   ~~- Crunch / Prone 모션 적용~~
   
   - 조준 시스템 적용
-  - Stance에 따른 CapsuleComponent Height 조절
+  ~~- Stance에 따른 CapsuleComponent Height 조절~~
     
 # 나중에 할 일
 ~~-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
