@@ -28,7 +28,10 @@
 <26/03/15>
   - 플레이어 Stance 별 CapsuleHalfHeight 적용
   - 조준 시스템 완성(half-aim)
-  
+
+<26/03/16>
+  - 플레이어 무기 메시를 상속관계로 총기의 성능과 메시를 같이 관리하도록 변경
+    
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
   - c 입력 시 Crunch / crtl 입력 시 Prone
@@ -66,4 +69,6 @@
   - UpdateLeaning : 플레이어의 특정 Lean 각도 까지 FInterp To를 이용해 보간하여 각도를 업데이트 한다(Tick의 DeltaTime 기반으로 계산)
   - UpdateCapsuleHeight : Stance별로 Mesh의 Z오프셋을 -CapsuleHalfHeight 만틈 주어 동기화 시킨 후 CapsuleHalfHeight를 TargetHalfHeight만큼 변경한다
   - UpdateFOV : 오른쪽 마우스 클릭에 따른 FOV값 변경
+  - SpawnWeapon : 지정한 무기의 종류를 소환한다
+  - InitWeapon : 상속받은 자식에서 총기의 성능과 스태틱 메시를 지정한다
   
