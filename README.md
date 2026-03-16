@@ -31,7 +31,7 @@
 
 <26/03/16>
   - 플레이어 무기 메시를 상속관계로 총기의 성능과 메시를 같이 관리하도록 변경
-  - 조준시에는 Crosshair의 위치를 고정시키는 함수 완성
+  - 조준시에는 Crosshair의 위치를 고정시키는 로직 UpdateCrosshair함수에 추가
     
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
