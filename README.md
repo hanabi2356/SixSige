@@ -34,7 +34,7 @@
   - 조준시에는 Crosshair의 위치를 고정시키는 로직 UpdateCrosshair함수에 추가
 
 <26/03/17>
-  - 마우스 오른쪽 클릭 시 MuzzleEffect 및 FireSound 재생 로직 완성
+  - 마우스 오른쪽 클릭 시 MuzzleEffect 및 FireSound 재생 로직 배치(미완성)
     
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
