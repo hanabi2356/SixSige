@@ -32,6 +32,9 @@
 <26/03/16>
   - 플레이어 무기 메시를 상속관계로 총기의 성능과 메시를 같이 관리하도록 변경
   - 조준시에는 Crosshair의 위치를 고정시키는 로직 UpdateCrosshair함수에 추가
+
+<26/03/17>
+  - 마우스 오른쪽 클릭 시 MuzzleEffect 및 FireSound 재생 로직 완성
     
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
@@ -52,6 +55,7 @@
   - 방향 전환시 애니메이션 튀는 현상 수정
   - Prone 애니메이션 구하기(Maximo에 없음)
   - ADS 시스템 구현(만약 Lens 머테리얼이 있는 에셋이 있을 경우에는 PiP 기법으로 구현하고 없으면 레일에 아무것도 없는 에셋을 사용하여 아이언 사이트로 만들 예정)
+  - MuzzleEffect 구하기
 
 # 버그 리포트
 <해결된 버그>
@@ -63,6 +67,7 @@
 
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
+  - 플레이만 눌러도 MuzzleEffect, FireSound가 무한 반복 재생됨(Tick 문제 같음)
     
 # 오브젝트 및 함수 기능
   - MovementVelocity : 현재 Stance별로 Max Walk Speed를 조절한다
@@ -73,4 +78,5 @@
   - UpdateFOV : 오른쪽 마우스 클릭에 따른 FOV값 변경
   - SpawnWeapon : 지정한 무기의 종류를 소환한다
   - InitWeapon : 상속받은 자식에서 총기의 성능과 스태틱 메시를 지정한다
+  - WeaponFire(WeaponBase) : ParticleSystem, SoundWave를 재생시킨다
   
