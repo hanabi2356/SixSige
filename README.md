@@ -35,6 +35,9 @@
 
 <26/03/17>
   - 마우스 오른쪽 클릭 시 MuzzleEffect 및 FireSound 재생 로직 배치(미완성)
+
+<26/03/19>
+  - 사운드 및 이펙트 마우스 오른쪽 클릭 시에만 출력되도록 변경
     
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
