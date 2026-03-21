@@ -50,8 +50,7 @@
     
 # 당장 할 일  
   - 조준 애니메이션 적용
-  - 사격기능 구현
-    
+  
 # 나중에 할 일
 ~~-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
@@ -67,6 +66,8 @@
     - 해결 방법 : CapsuleHalfHeignt를 바꿀때 Mesh의 Relative Location을 -CapsuleHalfHeight 만큼 바꿔 위치를 동기화 한다
   - Crunch/Prone 자세에서 Sprint가 되는 현상(Sprint시 Stand 상태로 변환)
   - 플레이시 FOV값이 0으로 강제 변환되는 현상(우클릭을 한 번 누르면 풀림)
+  - WeaponFire 함수 실행 시 사운드 객체가 여러 개 생겨 사운드가 겹치는 문제 발생
+  - 사격 시 마우스 클릭을 땐 후에 사운드가 재생되는 버그 발생(클릭 직 후에 사운드가 나와야함)
 
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
@@ -81,5 +82,5 @@
   - UpdateFOV : 오른쪽 마우스 클릭에 따른 FOV값 변경
   - SpawnWeapon : 지정한 무기의 종류를 소환한다
   - InitWeapon : 상속받은 자식에서 총기의 성능과 스태틱 메시를 지정한다
-  - WeaponFire(WeaponBase) : ParticleSystem, SoundWave를 재생시킨다
+  - WeaponFire(WeaponBase) : SoundWave를 재생시킨다
   
