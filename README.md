@@ -72,6 +72,7 @@
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
   - 플레이만 눌러도 MuzzleEffect, FireSound가 무한 반복 재생됨(Tick 문제 같음)
+  - 수류탄을 드는 3번 키를 누르면 수류탄이 안나오는 현상(Detach 및 Attach는 잘 되는거 같음)
     
 # 오브젝트 및 함수 기능
   - MovementVelocity : 현재 Stance별로 Max Walk Speed를 조절한다
@@ -83,4 +84,14 @@
   - SpawnWeapon : 지정한 무기의 종류를 소환한다
   - InitWeapon : 상속받은 자식에서 총기의 성능과 스태틱 메시를 지정한다
   - WeaponFire(WeaponBase) : SoundWave를 재생시킨다
+  - SwapWeapon : 현재 부착 되어있는 오브젝트를 삭제하고 새로운 오브젝트를 스폰하고 부착한다
+
+# 기타 메모장
+  - 연막탄
+    - delay time : 1.5
+    - duration time : 60
+  - 수류탄
+    - delay time : 5
+  - 섬광탄
+    - delay time : 2.3
   
