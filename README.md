@@ -38,7 +38,11 @@
 
 <26/03/19>
   - 사운드 및 이펙트 마우스 오른쪽 클릭 시에만 출력되도록 변경
-    
+
+<26/03/22>
+  - LineTrace를 이용한 사격 기능 완성
+  - 3번 입력 시 라이플을 Detach 하고 Throw 오브젝트를 Attach하는 기능 완성(미완성)
+
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
   - c 입력 시 Crunch / crtl 입력 시 Prone
@@ -72,6 +76,7 @@
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
   - 플레이만 눌러도 MuzzleEffect, FireSound가 무한 반복 재생됨(Tick 문제 같음)
+  - 3번 입력 시 Throw오브젝트가 안보이는 현상(static mesh에 지정이 안됨)
   
     
 # 오브젝트 및 함수 기능
