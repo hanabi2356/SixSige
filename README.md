@@ -43,6 +43,9 @@
   - LineTrace를 이용한 사격 기능 완성
   - 3번 입력 시 라이플을 Detach 하고 Throw 오브젝트를 Attach하는 기능 완성(미완성)
 
+<26/03/23>
+  - Throw 애니메이션 적용
+
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
   - c 입력 시 Crunch / crtl 입력 시 Prone
@@ -72,6 +75,7 @@
   - 플레이시 FOV값이 0으로 강제 변환되는 현상(우클릭을 한 번 누르면 풀림)
   - WeaponFire 함수 실행 시 사운드 객체가 여러 개 생겨 사운드가 겹치는 문제 발생
   - 사격 시 마우스 클릭을 땐 후에 사운드가 재생되는 버그 발생(클릭 직 후에 사운드가 나와야함)
+  - 3번 입력 시 Throwable 오브젝트가 누르는 동안 무한으로 생성되는 버그(Enhanced Input System에서 눌렸을 때를 Triggered가 아니라 started로 지정해야 한다)
 
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
