@@ -76,11 +76,12 @@
   - WeaponFire 함수 실행 시 사운드 객체가 여러 개 생겨 사운드가 겹치는 문제 발생
   - 사격 시 마우스 클릭을 땐 후에 사운드가 재생되는 버그 발생(클릭 직 후에 사운드가 나와야함)
   - 3번 입력 시 Throwable 오브젝트가 누르는 동안 무한으로 생성되는 버그(Enhanced Input System에서 눌렸을 때를 Triggered가 아니라 started로 지정해야 한다)
+  - 3번 입력 시 Throw오브젝트가 안보이는 현상(static mesh에 지정이 안됨)
 
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
   - 플레이만 눌러도 MuzzleEffect, FireSound가 무한 반복 재생됨(Tick 문제 같음)
-  - 3번 입력 시 Throw오브젝트가 안보이는 현상(static mesh에 지정이 안됨)
+  - 3번 입력 시 투척 오브젝트가 바로 스폰되지 않고 시간이 어느정도 지난뒤 생성됨
   
     
 # 오브젝트 및 함수 기능
