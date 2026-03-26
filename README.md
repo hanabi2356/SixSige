@@ -48,6 +48,7 @@
 
 <26/03/26>
   - 투척 애니메이션 몽타주에 AnimNotify 적용
+  - 투척 후 무기가 스폰되지 않던 버그 수정
 
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
@@ -60,7 +61,8 @@
     
 # 당장 할 일  
   - 조준 애니메이션 적용
-  - Player enum을 만들어서 Init함수에서 초기 데이터를 지정 
+  - Player enum을 만들어서 Init함수에서 초기 데이터를 지정
+  - 투사체 포물선 운동 구현
   
 # 나중에 할 일
 ~~-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
@@ -82,11 +84,12 @@
   - 사격 시 마우스 클릭을 땐 후에 사운드가 재생되는 버그 발생(클릭 직 후에 사운드가 나와야함)
   - 3번 입력 시 Throwable 오브젝트가 누르는 동안 무한으로 생성되는 버그(Enhanced Input System에서 눌렸을 때를 Triggered가 아니라 started로 지정해야 한다)
   - 3번 입력 시 Throw오브젝트가 안보이는 현상(static mesh에 지정이 안됨)
+  - 3번 입력 시 투척 오브젝트가 바로 스폰되지 않고 시간이 어느정도 지난뒤 생성됨
+  - 투척물을 던진 후 총이 스폰되지 않음
 
 <해결되지 않은 버그>
   - Crunch -> Stand 변화시 Lerp 미적용으로 인한 부자연스럽게 속도가 빠른 현상
   - 플레이만 눌러도 MuzzleEffect, FireSound가 무한 반복 재생됨(Tick 문제 같음)
-  - 3번 입력 시 투척 오브젝트가 바로 스폰되지 않고 시간이 어느정도 지난뒤 생성됨
   
     
 # 오브젝트 및 함수 기능
@@ -96,10 +99,10 @@
   - UpdateLeaning : 플레이어의 특정 Lean 각도 까지 FInterp To를 이용해 보간하여 각도를 업데이트 한다(Tick의 DeltaTime 기반으로 계산)
   - UpdateCapsuleHeight : Stance별로 Mesh의 Z오프셋을 -CapsuleHalfHeight 만틈 주어 동기화 시킨 후 CapsuleHalfHeight를 TargetHalfHeight만큼 변경한다
   - UpdateFOV : 오른쪽 마우스 클릭에 따른 FOV값 변경
-  - SpawnWeapon : 지정한 무기의 종류를 소환한다
+  - SpawnGun : 기존에 있던 
   - InitWeapon : 상속받은 자식에서 총기의 성능과 스태틱 메시를 지정한다
   - WeaponFire(WeaponBase) : SoundWave를 재생시킨다
-  - SwapWeapon : 현재 부착 되어있는 오브젝트를 삭제하고 새로운 오브젝트를 스폰하고 부착한다
+  - SpawnThrowable : 현재 부착된 오브젝트를 삭제하고 투척물 오브젝트를 스폰한다
   - PlayThrowMontage : 투척모션 몽타주를 호출하여 애니메이션을 출력한다
   - ThrowMontage : 애니메이션에 AnimNotify를 적용하여 적용한 타이밍에 맞춰 투척물을 던진다
 
