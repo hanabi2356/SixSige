@@ -46,6 +46,9 @@
 <26/03/23>
   - Throw 애니메이션 적용
 
+<26/03/26>
+  - 투척 애니메이션 몽타주에 AnimNotify 적용
+
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
   - c 입력 시 Crunch / crtl 입력 시 Prone
@@ -61,7 +64,8 @@
 # 나중에 할 일
 ~~-IDLE 모션의 총기가 과하게 높게 설정되어있음(새롭게 구할 예정)~~
 
-  - 방향 전환시 애니메이션 튀는 현상 수정
+~~방향 전환시 애니메이션 튀는 현상 수정~~
+
   - Prone 애니메이션 구하기(Maximo에 없음)
   - ADS 시스템 구현(만약 Lens 머테리얼이 있는 에셋이 있을 경우에는 PiP 기법으로 구현하고 없으면 레일에 아무것도 없는 에셋을 사용하여 아이언 사이트로 만들 예정)
   - MuzzleEffect 구하기
@@ -95,13 +99,15 @@
   - InitWeapon : 상속받은 자식에서 총기의 성능과 스태틱 메시를 지정한다
   - WeaponFire(WeaponBase) : SoundWave를 재생시킨다
   - SwapWeapon : 현재 부착 되어있는 오브젝트를 삭제하고 새로운 오브젝트를 스폰하고 부착한다
+  - PlayThrowMontage : 투척모션 몽타주를 호출하여 애니메이션을 출력한다
+  - ThrowMontage : 애니메이션에 AnimNotify를 적용하여 적용한 타이밍에 맞춰 투척물을 던진다
 
 # 기타 메모장
   - 연막탄
-    - delay time : 1.5
+    - fuse time : 1.5
     - duration time : 60
   - 수류탄
-    - delay time : 5
+    - fuse time : 5
   - 섬광탄
-    - delay time : 2.3
+    - fuse time : 2.3
   
