@@ -50,6 +50,9 @@
   - 투척 애니메이션 몽타주에 AnimNotify 적용
   - 투척 후 무기가 스폰되지 않던 버그 수정
 
+<26/03/27>
+  - 투척물 던지기 구현(포물선 운동 미적용)
+    
 # 원작 게임(Rainbow Six Sige)기능 노트
   - Sprint W + Shift를 같이 눌렀을 때만 작동
   - c 입력 시 Crunch / crtl 입력 시 Prone
